@@ -8,7 +8,7 @@ export default function Logo() {
       aria-label={`${SITE.name} — início`}
     >
       {SITE.initials}
-      <b className="text-brand">.</b>
+      <b className="text-brand"></b>
     </a>
   );
 }

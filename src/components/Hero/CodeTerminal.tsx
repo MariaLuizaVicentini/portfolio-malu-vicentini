@@ -11,7 +11,6 @@ const V = ({ children }: { children: React.ReactNode }) => (
   <span className="text-txt">{children}</span>
 );
 
-/** Cartão "developer.php" do hero, com as métricas no rodapé. */
 export default function CodeTerminal() {
   return (
     <div className="term-topline relative overflow-hidden rounded-xl border border-line bg-gradient-to-b from-panel-2 to-panel shadow-term">
@@ -27,12 +26,10 @@ export default function CodeTerminal() {
           <K>class</K> <span className="text-code-fn">Developer</span> {'{'}
           {'\n'}
           {'  '}
-          <K>public</K> <V>$nome</V> = <S>&#39;Malu Vicentini&#39;</S>;{'\n'}
-          {'  '}
           <K>public</K> <V>$foco</V> = <S>&#39;Backend&#39;</S>;{'\n'}
           {'  '}
-          <K>public</K> <V>$stack</V> = [<S>&#39;PHP&#39;</S>, <S>&#39;Laravel&#39;</S>,{' '}
-          <S>&#39;Python&#39;</S>];{'\n'}
+          <K>public</K> <V>$stack</V> = [<S>&#39;PHP&#39;</S>,{' '}
+          <S>&#39;Python&#39;</S>, <S>&#39;TypeScript&#39;</S>];{'\n'}
           {'  '}
           <K>public</K> <V>$estudando</V> = <S>&#39;Arquitetura&#39;</S>;{'\n'}
           {'}'}

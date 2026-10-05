@@ -2,8 +2,8 @@ import type { Metric, NavLink } from '@/types';
 
 export const SITE = {
   name: 'Malu Vicentini',
-  role: 'Desenvolvedora Back-end',
-  initials: 'MV',
+  role: 'Desenvolvedora Full-stack',
+  initials: 'Seja Bem-Vindo(a)',
   year: 2026,
   email: 'vicentinimalu1@gmail.com',
   github: 'https://github.com/MariaLuizaVicentini',
@@ -12,7 +12,7 @@ export const SITE = {
   linkedinHandle: 'malu-vicentini',
   resume: 'https://maluvicentini.onrender.com/curriculo/DEVMALU_09.2026.pdf',
   availability: 'Disponível para projetos',
-  lead: 'Desenvolvimento backend e integrações entre sistemas, com foco em arquitetura de software, ambientes bem estruturados e boas práticas.',
+  lead: 'Desenvolvimento com foco em arquitetura de software, ambientes bem estruturados e boas práticas.',
 } as const;
 
 export const NAV_LINKS: NavLink[] = [
@@ -33,7 +33,7 @@ export const FOOTER_LINKS: NavLink[] = [
 export const SECTION_IDS = ['projetos', 'tecnologias', 'sobre', 'contato'];
 
 export const HERO_METRICS: Metric[] = [
-  { value: '06', label: 'Projetos' },
+  { value: '49', label: 'Projetos' },
   { value: '12', label: 'Tecnologias' },
   { value: '04', label: 'Áreas' },
 ];

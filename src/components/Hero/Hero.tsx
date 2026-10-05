@@ -1,7 +1,6 @@
-import CodeTerminal from './CodeTerminal';
-import StatusBadge from './StatusBadge';
-import { ButtonLink } from '@/components/ui';
-import { MAIN_STACK, SITE } from '@/data/site';
+import CodeTerminal from "./CodeTerminal";
+import { ButtonLink } from "@/components/ui";
+import { MAIN_STACK, SITE } from "@/data/site";
 
 export default function Hero() {
   return (
@@ -13,18 +12,19 @@ export default function Hero() {
       <div className="wrap">
         <div className="grid grid-cols-1 items-center gap-[52px] min-[980px]:grid-cols-[1.15fr_.85fr] min-[980px]:gap-[70px]">
           <div>
-            <StatusBadge label={SITE.availability} />
-
             <h1
               id="hero-title"
-              className="mb-[22px] text-[clamp(42px,13vw,60px)] font-semibold leading-[.93] tracking-[-.045em] min-[620px]:text-[clamp(54px,7.6vw,104px)]"
+              className="mb-[22px] text-[clamp(28px,8vw,40px)] font-semibold leading-[.93] tracking-[-.045em] min-[620px]:text-[clamp(36px,5vw,64px)]"
             >
-              MALU
-              <span className="block text-txt-3">VICENTINI</span>
+              Malu
+              <span className="block text-txt-3">Vicentini</span>
             </h1>
 
             <div className="mb-[26px] flex items-center gap-2.5 font-mono text-[clamp(14px,1.5vw,17px)] tracking-[.01em] text-brand">
-              <span aria-hidden className="inline-block h-[17px] w-[9px] animate-blink bg-brand" />
+              <span
+                aria-hidden
+                className="inline-block h-[17px] w-[9px] animate-blink bg-brand"
+              />
               {SITE.role}
             </div>
 
@@ -33,7 +33,11 @@ export default function Hero() {
             </p>
 
             <div className="flex w-full flex-wrap items-center gap-3.5">
-              <ButtonLink href="#projetos" variant="primary" className="max-[620px]:flex-1">
+              <ButtonLink
+                href="#projetos"
+                variant="primary"
+                className="max-[620px]:flex-1"
+              >
                 Ver projetos →
               </ButtonLink>
               <ButtonLink

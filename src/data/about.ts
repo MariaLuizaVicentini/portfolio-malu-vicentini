@@ -13,10 +13,6 @@ export const ABOUT_PARAGRAPHS: { text: string; strong?: string[] }[] = [
   {
     text: 'Meu interesse vai muito além da linguagem de programação. Procuro entender o papel de cada ferramenta dentro do ecossistema de desenvolvimento, quais problemas ela resolve e em quais contextos sua adoção faz sentido.',
   },
-  {
-    text: 'Atualmente, tenho aprofundado meus estudos em ambientes de desenvolvimento com Docker, Linux e Ubuntu, além de boas práticas para desenvolvimento backend.',
-    strong: ['Docker, Linux e Ubuntu'],
-  },
 ];
 
 export const PILLARS: Pillar[] = [
@@ -29,8 +25,8 @@ export const PILLARS: Pillar[] = [
 export const PROFILE_ROWS: ProfileRow[] = [
   { label: 'Nome', value: SITE.name },
   { label: 'Cargo', value: SITE.role },
-  { label: 'Atuação', value: 'Backend · Integrações' },
-  { label: 'Projetos', value: '06 publicados' },
+  { label: 'Atuação', value: 'Backend · Frontend · Integrações' },
+  { label: 'Projetos', value: '49 publicados' },
   { label: 'Currículo', value: 'Baixar PDF ↗', href: SITE.resume, highlight: true },
 ];
 
