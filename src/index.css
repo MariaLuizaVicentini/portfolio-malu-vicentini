@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #08090b;
+    --line: #1c212b;
+    --brand: #2bd87b;
+  }
+
+  * {
+    @apply m-0 border-0 p-0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* compensa o header fixo de 68px ao navegar por âncora */
+    scroll-padding-top: 88px;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-bg font-sans leading-[1.5] text-txt;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand text-white;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Container padrão — equivalente ao .wrap do HTML original */
+  .wrap {
+    @apply mx-auto w-full max-w-wrap px-5 min-[620px]:px-[26px] min-[980px]:px-10;
+  }
+
+  /*
+   * Efeitos que dependem de máscaras, gradientes repetidos e scrollbars —
+   * não expressáveis apenas com utilitários do Tailwind.
+   */
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+    background-size: 72px 72px;
+    -webkit-mask-image: radial-gradient(ellipse 100% 60% at 50% 0%, #000 30%, transparent 80%);
+    mask-image: radial-gradient(ellipse 100% 60% at 50% 0%, #000 30%, transparent 80%);
+  }
+
+  .bloom-gradient {
+    background: radial-gradient(
+      circle,
+      rgba(43, 216, 123, 0.2) 0%,
+      rgba(43, 216, 123, 0.06) 38%,
+      transparent 64%
+    );
+    filter: blur(40px);
+  }
+
+  .feat-visual {
+    background:
+      linear-gradient(135deg, rgba(43, 216, 123, 0.09), transparent 60%),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 31px,
+        rgba(255, 255, 255, 0.026) 31px,
+        rgba(255, 255, 255, 0.026) 32px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 31px,
+        rgba(255, 255, 255, 0.026) 31px,
+        rgba(255, 255, 255, 0.026) 32px
+      ),
+      var(--bg);
+  }
+
+  .card-visual {
+    background:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 23px,
+        rgba(255, 255, 255, 0.022) 23px,
+        rgba(255, 255, 255, 0.022) 24px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 23px,
+        rgba(255, 255, 255, 0.022) 23px,
+        rgba(255, 255, 255, 0.022) 24px
+      ),
+      #0d0f13;
+  }
+
+  /* Linha luminosa no topo do terminal do hero */
+  .term-topline::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--brand), transparent);
+    opacity: 0.7;
+  }
+
+  .scroll-slim {
+    scrollbar-width: thin;
+    scrollbar-color: #262d3a transparent;
+  }
+
+  .scroll-slim::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scroll-slim::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scroll-slim::-webkit-scrollbar-thumb {
+    background: #262d3a;
+    border-radius: 999px;
+  }
+
+  .scroll-slim::-webkit-scrollbar-thumb:hover {
+    background: rgba(43, 216, 123, 0.4);
+  }
+}
