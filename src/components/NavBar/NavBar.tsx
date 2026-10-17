@@ -6,7 +6,7 @@ import { SECTION_IDS } from '@/data/site';
 import { useLockBodyScroll, useOnKeyDown, useScrollSpy } from '@/hooks';
 import { cn } from '@/utils/cn';
 
-export default function Header() {
+export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const activeId = useScrollSpy(SECTION_IDS);
 

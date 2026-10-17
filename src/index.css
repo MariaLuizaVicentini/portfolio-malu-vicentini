@@ -16,7 +16,7 @@
 
   html {
     scroll-behavior: smooth;
-    /* compensa o header fixo de 68px ao navegar por âncora */
+    /* compensa o navbar fixa de 68px ao navegar por âncora */
     scroll-padding-top: 88px;
   }
 

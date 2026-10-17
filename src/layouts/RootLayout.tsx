@@ -1,7 +1,7 @@
 import Background from '@/components/Background/Background';
 import ChatBubble from '@/components/ChatBubble';
 import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
+import Header from '@/components/NavBar/NavBar';
 
 interface RootLayoutProps {
   children: React.ReactNode;

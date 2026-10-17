@@ -85,7 +85,7 @@ export default function ChatWindow({ open, closing, onClose, titleId }: ChatWind
     >
       <header className="flex items-center gap-3 border-b border-line bg-white/[.012] px-4 py-3.5">
         <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-[9px] border border-brand-line bg-brand-soft font-mono text-[12px] font-semibold text-brand">
-          {SITE.initials}
+          {SITE.welcome}
         </span>
 
         <span className="min-w-0 flex-1">

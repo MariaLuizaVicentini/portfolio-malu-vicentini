@@ -7,7 +7,7 @@ export default function Logo() {
       className="font-mono text-[15px] font-semibold tracking-[.02em]"
       aria-label={`${SITE.name} — início`}
     >
-      {SITE.initials}
+      {SITE.welcome}
       <b className="text-brand"></b>
     </a>
   );
