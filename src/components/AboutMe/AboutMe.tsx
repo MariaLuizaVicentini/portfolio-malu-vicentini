@@ -3,7 +3,7 @@ import Pillars from './Pillars';
 import ProfilePanel from './ProfilePanel';
 import { DimWord, Section, SectionHeading } from '@/components/ui';
 
-export default function About() {
+export default function AboutMe() {
   return (
     <Section id="sobre" alt labelledBy="sobre-title">
       <SectionHeading

@@ -1,4 +1,4 @@
-import { ABOUT_PARAGRAPHS } from '@/data/about';
+import { ABOUT_PARAGRAPHS } from '@/data/aboutMe';
 import { cn } from '@/utils/cn';
 
 /** Destaca em negrito os trechos marcados no dado de origem. */

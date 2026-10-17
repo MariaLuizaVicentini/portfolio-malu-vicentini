@@ -1,4 +1,4 @@
-import { LEARNING_NOW, PROFILE_ROWS } from '@/data/about';
+import { LEARNING_NOW, PROFILE_ROWS } from '@/data/aboutMe';
 
 export default function ProfilePanel() {
   return (

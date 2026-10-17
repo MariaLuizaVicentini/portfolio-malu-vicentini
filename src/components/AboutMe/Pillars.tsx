@@ -1,4 +1,4 @@
-import { PILLARS } from '@/data/about';
+import { PILLARS } from '@/data/aboutMe';
 
 export default function Pillars() {
   return (
