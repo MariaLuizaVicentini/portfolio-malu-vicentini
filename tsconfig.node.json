@@ -10,9 +10,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     "strict": true,
-    // "types": ["node"]
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
-  // "include": ["vite.config.ts"]
-  "include": ["src"], "exclude": ["node_modules"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "index.css", "*.config.ts", "*.config.js"]
 }
