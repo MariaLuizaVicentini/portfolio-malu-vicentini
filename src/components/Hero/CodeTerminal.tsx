@@ -1,4 +1,4 @@
-import WindowDots from '@/components/ui/WindowDots';
+import WindowDots from '@/components/primitivesUi/WindowDots';
 import { HERO_METRICS } from '@/data/site';
 
 const K = ({ children }: { children: React.ReactNode }) => (

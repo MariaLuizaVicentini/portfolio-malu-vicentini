@@ -1,4 +1,4 @@
-import { TagList } from '@/components/ui';
+import { TagList } from '@/components/primitivesUi';
 import type { Project } from '@/types';
 
 interface ProjectCardProps {

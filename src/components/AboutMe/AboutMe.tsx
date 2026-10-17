@@ -1,7 +1,7 @@
 import AboutText from './AboutText';
 import Pillars from './Pillars';
 import ProfilePanel from './ProfilePanel';
-import { DimWord, Section, SectionHeading } from '@/components/ui';
+import { DimWord, Section, SectionHeading } from '@/components/primitivesUi';
 
 export default function AboutMe() {
   return (

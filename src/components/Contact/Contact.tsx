@@ -1,5 +1,5 @@
 import ChannelList from './ChannelList';
-import { Eyebrow } from '@/components/ui';
+import { Eyebrow } from '@/components/primitivesUi';
 import { SITE } from '@/data/site';
 
 export default function Contact() {

@@ -1,7 +1,7 @@
 import AllReposCard from './AllReposCard';
 import FeaturedProject from './FeaturedProject';
 import ProjectCard from './ProjectCard';
-import { DimWord, Reveal, Section, SectionHeading } from '@/components/ui';
+import { DimWord, Reveal, Section, SectionHeading } from '@/components/primitivesUi';
 import { FEATURED_PROJECT, PROJECTS } from '@/data/projects';
 
 export default function Projects() {

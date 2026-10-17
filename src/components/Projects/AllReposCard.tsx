@@ -1,4 +1,4 @@
-import { Eyebrow } from '@/components/ui';
+import { Eyebrow } from '@/components/primitivesUi';
 import { SITE } from '@/data/site';
 
 /** Card final do grid, com gradiente próprio, apontando para o GitHub. */

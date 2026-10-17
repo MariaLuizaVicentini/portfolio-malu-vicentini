@@ -1,5 +1,5 @@
 import CodeTerminal from "./CodeTerminal";
-import { ButtonLink } from "@/components/ui";
+import { ButtonLink } from "@/components/primitivesUi";
 import { MAIN_STACK, SITE } from "@/data/site";
 
 export default function Hero() {

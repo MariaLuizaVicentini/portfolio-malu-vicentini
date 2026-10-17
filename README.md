@@ -62,15 +62,15 @@ src/
 ```text
 src/
 ├── components/
-│   ├── About/            # Seção "Quem desenvolve" + painel de perfil
+│   ├── AboutMe/            # Seção "Quem desenvolve" + painel de perfil
 │   ├── ChatBubble/       # Bubble flutuante + janela de chat
 │   ├── Contact/          # Seção de contato e canais
 │   ├── Footer/
-│   ├── Header/           # Nav fixa + menu mobile
+│   ├── NavBar/           # Nav fixa + menu mobile
 │   ├── Hero/             # Hero, terminal developer.php e métricas
 │   ├── Projects/         # Projeto em destaque + grid de cards
 │   ├── Technologies/     # Colunas de stack com ícones SVG
-│   └── ui/               # Primitivos reutilizáveis (Button, Tag, Section…)
+│   └── primitivesUi/     # Primitivos reutilizáveis (Button, Tag, Section…)
 ├── data/                 # Conteúdo do site (projetos, stack, perfil, chat)
 ├── hooks/                # useScrollSpy, useLockBodyScroll, useMediaQuery…
 ├── layouts/              # Layout raiz com fundo, header e footer

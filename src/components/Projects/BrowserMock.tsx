@@ -1,4 +1,4 @@
-import WindowDots from '@/components/ui/WindowDots';
+import WindowDots from '@/components/primitivesUi/WindowDots';
 
 interface BrowserMockProps {
   url: string;

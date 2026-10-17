@@ -1,5 +1,5 @@
 import TechColumn from './TechColumn';
-import { DimWord, Section, SectionHeading, Tag } from '@/components/ui';
+import { DimWord, Section, SectionHeading, Tag } from '@/components/primitivesUi';
 import { DEEPENING, TECH_CATEGORIES } from '@/data/technologies';
 
 export default function Technologies() {
