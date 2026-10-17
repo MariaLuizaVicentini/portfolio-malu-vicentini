@@ -23,6 +23,7 @@ export default function ProfilePanel() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand transition-opacity hover:opacity-80"
+                  data-testid="sobre-mim-curriculo-pdf"
                 >
                   {row.value}
                 </a>
