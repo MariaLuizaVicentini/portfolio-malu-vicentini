@@ -24,6 +24,40 @@ Checagem de tipos:
 npm run typecheck
 ```
 
+Testes:
+- modo watch, re-executa ao salvar arquivos
+```bash
+test 
+```
+- executa uma vez e sai (ideal para CI)
+```bash
+test:run
+```
+
+- gera relatório de cobertura
+```bash
+test:coverage 
+```
+
+- abre interface visual no browser (opcional, requer @vitest/ui)
+```bash
+test:ui 
+```
+
+
+## Estrutura Testes
+```text
+src/
+  components/
+    Button/
+      Button.tsx
+      Button.test.tsx    ← teste ao lado do componente
+      index.ts
+  hooks/
+    useCounter/
+      useCounter.ts
+      useCounter.test.t
+```
 ## Estrutura
 ```text
 src/
