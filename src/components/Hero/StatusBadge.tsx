@@ -1,6 +1,4 @@
-interface StatusBadgeProps {
-  label: string;
-}
+import { StatusBadgeProps } from "@/types/hero";
 
 export default function StatusBadge({ label }: StatusBadgeProps) {
   return (

@@ -1,3 +1,4 @@
+import StatusBadge from "./StatusBadge";
 import CodeTerminal from "./CodeTerminal";
 import { ButtonLink } from "@/components/primitivesUi";
 import { MAIN_STACK, SITE } from "@/data/site";
@@ -12,6 +13,8 @@ export default function Hero() {
       <div className="wrap">
         <div className="grid grid-cols-1 items-center gap-[52px] min-[980px]:grid-cols-[1.15fr_.85fr] min-[980px]:gap-[70px]">
           <div>
+            <StatusBadge label="Disponível para projetos" />
+
             <h1
               id="hero-title"
               className="mb-[22px] text-[clamp(28px,8vw,40px)] font-semibold leading-[.93] tracking-[-.045em] min-[620px]:text-[clamp(36px,5vw,64px)]"
