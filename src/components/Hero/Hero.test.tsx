@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, test, expect, vi } from "vitest";
+import { describe, test, expect } from "vitest";
 import Hero from "./Hero";
 
 describe("Hero (componente) - unit", () => {
@@ -12,12 +12,11 @@ describe("Hero (componente) - unit", () => {
   });
   test("botão do linkedin", () => {
     render(<Hero />);
-    screen.debug();
-    const linkedinButton = screen.getByRole("link", { name: /github/i });
+    const linkedinButton = screen.getByRole("link", { name: /linkedin/i });
     expect(linkedinButton).toBeInTheDocument();
     expect(linkedinButton).toHaveAttribute(
       "href",
-      "https://github.com/MariaLuizaVicentini",
+      "https://www.linkedin.com/in/malu-vicentini-5b8181201",
     );
   });
   test("botão do github", () => {
