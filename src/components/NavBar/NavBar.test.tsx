@@ -3,7 +3,6 @@ import NavBar from "./NavBar";
 describe("NavBar (componente) - unit", () => {
   test("baixar CV", () => {
     render(<NavBar/>);
-    screen.debug();
     const cvButton = screen.getByRole("link", {name: /Baixar CV/i})
     expect(cvButton).toBeInTheDocument();
     expect(cvButton).toHaveAttribute("target", "_blank");

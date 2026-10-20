@@ -4,7 +4,6 @@ import NavLinks from "./NavLinks";
 describe("NavLinks (componente) - unit", () => {
   test("projetos", () => {
     render(<NavLinks />);
-    screen.debug();
     const projetos = screen.getByRole("link", { name: /Projetos/i });
     expect(projetos).toBeInTheDocument();
     expect(projetos).toHaveAttribute("href", "#projetos");
