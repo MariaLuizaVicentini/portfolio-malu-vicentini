@@ -1,9 +1,5 @@
-import { TagList } from '@/components/primitivesUi';
-import type { Project } from '@/types';
-
-interface ProjectCardProps {
-  project: Project;
-}
+import { TagList } from "@/components/primitivesUi";
+import type { ProjectCardProps } from "@/types/projects";
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
@@ -21,7 +17,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       <div className="flex flex-1 flex-col p-[22px]">
-        <h4 className="mb-2 text-[17.5px] font-semibold tracking-[-.015em]">{project.title}</h4>
+        <h4 className="mb-2 text-[17.5px] font-semibold tracking-[-.015em]">
+          {project.title}
+        </h4>
         <p className="mb-[18px] flex-1 text-[13.2px] leading-[1.65] text-txt-2">
           {project.description}
         </p>

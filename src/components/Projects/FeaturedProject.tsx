@@ -1,6 +1,6 @@
 import BrowserMock from './BrowserMock';
 import { TagList } from '@/components/primitivesUi';
-import type { Project } from '@/types';
+import type { Project } from "@/types/projects";
 
 interface FeaturedProjectProps {
   project: Project;
