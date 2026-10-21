@@ -8,7 +8,6 @@ describe("ProjectCard (componente) - unit", () => {
     render(<ProjectCard project={project} />);
     let titulo = screen.getByText(project.title);
 
-    screen.debug();
     expect(titulo).toBeInTheDocument();
   });
   test("descricao", () => {

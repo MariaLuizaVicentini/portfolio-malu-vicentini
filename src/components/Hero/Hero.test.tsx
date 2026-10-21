@@ -28,4 +28,9 @@ describe("Hero (componente) - unit", () => {
       "https://github.com/MariaLuizaVicentini",
     );
   });
+  test("stack principal", () => {
+    render(<Hero />);
+    const stack = screen.getByText("Stack principal");
+    expect(stack).toBeInTheDocument();
+  });
 });
