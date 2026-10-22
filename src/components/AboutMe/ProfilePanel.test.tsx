@@ -24,7 +24,6 @@ describe("ProfilePanel (componente) - unit", () => {
   });
   test("curriculo (pdf)", () => {
     render(<ProfilePanel />);
-    screen.debug();
     const element = screen.getByRole("link", { name: /Baixar PDF ↗/i });
     expect(element).toBeInTheDocument();
     expect(element).toHaveAttribute("target", "_blank");
