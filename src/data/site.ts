@@ -3,7 +3,7 @@ import type { Metric, NavLink } from '@/types';
 export const SITE = {
   name: 'Malu Vicentini',
   role: 'Desenvolvedora Full-stack',
-  welcome: 'Seja Bem-Vindo(a)',
+  welcome: '⫷M⋈V⫸',
   year: 2026,
   email: 'vicentinimalu1@gmail.com',
   github: 'https://github.com/MariaLuizaVicentini',
