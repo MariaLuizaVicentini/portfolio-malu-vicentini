@@ -19,9 +19,9 @@ export default function Projects() {
         description="Aplicações full-stack, automações e integrações com APIs. Código disponível nos repositórios."
       />
 
-      <Reveal>
+      {/* <Reveal>
         <FeaturedProject project={FEATURED_PROJECT} />
-      </Reveal>
+      </Reveal> */}
 
       <div className="grid grid-cols-1 gap-[22px] min-[620px]:grid-cols-2 min-[1100px]:grid-cols-3">
         {PROJECTS.map((project, index) => (
