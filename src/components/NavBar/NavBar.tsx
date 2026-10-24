@@ -27,7 +27,7 @@ export default function NavBar() {
             href={SITE.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-brand px-[18px] py-[9px] font-mono text-xs font-medium tracking-[.04em] text-white shadow-none transition-[transform,box-shadow] duration-200 hover:-translate-y-px hover:shadow-btn-cv-hover"
+            className="rounded-full  px-[18px] py-[9px] font-mono text-xs font-medium tracking-[.04em] text-white shadow-none transition-[transform,box-shadow] duration-200 hover:-translate-y-px hover:shadow-btn-cv-hover"
           >
             Baixar CV
           </a>
