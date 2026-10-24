@@ -8,6 +8,7 @@ export interface Project {
   repoUrl: string;
   featured?: boolean;
   browserLabel?: string;
+  img?: string;
 }
 
 

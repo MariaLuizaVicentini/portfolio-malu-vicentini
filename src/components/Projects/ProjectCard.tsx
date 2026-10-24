@@ -4,18 +4,20 @@ import type { ProjectCardProps } from "@/types/projects";
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-line bg-panel transition-all duration-300 hover:-translate-y-1 hover:border-brand-line">
-      <div className="card-visual relative flex h-[132px] items-center justify-center border-b border-line">
-        <span className="font-mono text-[44px] font-semibold tracking-[-.03em] text-line-2"></span>
-        <span
-          aria-hidden
-          className="absolute bottom-2.5 left-3 font-mono text-[8.5px] tracking-[.12em] text-txt-3"
-        ></span>
+      <div className="card-visual relative h-[132px] overflow-hidden border-b border-line">
+        <img
+          src={project.img}
+          alt={`Prévia do projeto ${project.title}`}
+          loading="lazy"
+          className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
 
       <div className="flex flex-1 flex-col p-[22px]">
         <h4 className="mb-2 text-[17.5px] font-semibold tracking-[-.015em]">
           {project.title}
         </h4>
+
         <p className="mb-[18px] flex-1 text-[13.2px] leading-[1.65] text-txt-2">
           {project.description}
         </p>
