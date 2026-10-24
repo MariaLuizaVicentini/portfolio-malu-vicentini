@@ -12,7 +12,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           aria-hidden
           className="absolute bottom-2.5 left-3 font-mono text-[8.5px] tracking-[.12em] text-txt-3"
         >
-          PLACEHOLDER
         </span>
       </div>
 

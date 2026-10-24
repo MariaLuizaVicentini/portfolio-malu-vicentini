@@ -37,7 +37,6 @@ export default function FeaturedProject({ project }: FeaturedProjectProps) {
       <div className="feat-visual relative flex min-h-[300px] items-center justify-center border-t border-line p-8 min-[980px]:min-h-[400px] min-[980px]:border-l min-[980px]:border-t-0 min-[980px]:p-11">
         <BrowserMock url={project.browserLabel ?? project.id} />
         <span className="absolute bottom-[18px] right-5 rounded border border-dashed border-line-2 px-[9px] py-1 font-mono text-[9.5px] uppercase tracking-[.09em] text-txt-3">
-          Área para screenshot
         </span>
       </div>
     </article>
