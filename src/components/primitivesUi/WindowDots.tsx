@@ -3,9 +3,9 @@ import { cn } from "@/utils/cn";
 /** Os três pontinhos das janelas (terminal / browser). */
 export default function WindowDots({ small }: { small?: boolean }) {
   const dotColors = [
-    "bg-[#FF5F56] hover:opacity-80",
-    "bg-[#FFBD2E] hover:opacity-80",
-    "bg-[#27C93F] hover:opacity-80",
+      "bg-red-500 hover:opacity-80",
+      "bg-yellow-500 hover:opacity-80",
+      "bg-emerald-500 hover:opacity-80", // Verde padrão seguro
   ];
 
   return (
