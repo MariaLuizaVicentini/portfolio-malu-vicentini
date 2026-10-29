@@ -10,7 +10,7 @@ export const SITE = {
   githubHandle: 'MariaLuizaVicentini',
   linkedin: 'https://www.linkedin.com/in/malu-vicentini-5b8181201',
   linkedinHandle: 'malu-vicentini',
-  resume: 'https://maluvicentini.onrender.com/curriculo/DEVMALU_09.2026.pdf',
+  resume: 'public/DEVMALU_09.2026.pdf',
   availability: 'Disponível para projetos',
   lead: 'Desenvolvimento com foco em arquitetura de software, ambientes bem estruturados e boas práticas.',
 } as const;

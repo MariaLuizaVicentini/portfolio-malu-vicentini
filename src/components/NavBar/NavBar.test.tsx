@@ -6,6 +6,6 @@ describe("NavBar (componente) - unit", () => {
     const cvButton = screen.getByRole("link", {name: /Baixar CV/i})
     expect(cvButton).toBeInTheDocument();
     expect(cvButton).toHaveAttribute("target", "_blank");
-    expect(cvButton).toHaveAttribute("href", "https://maluvicentini.onrender.com/curriculo/DEVMALU_09.2026.pdf");
+    expect(cvButton).toHaveAttribute("href", "public/DEVMALU_09.2026.pdf");
   });
 });
