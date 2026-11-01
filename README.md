@@ -14,38 +14,52 @@ npm run dev
 ```
 
 Build de produção:
+
 ```bash
 npm run build
 npm run preview
 ```
 
 Checagem de tipos:
+
 ```bash
 npm run typecheck
 ```
 
 Testes:
+
 - modo watch, re-executa ao salvar arquivos
+
 ```bash
-test 
+test
 ```
+
 - executa uma vez e sai (ideal para CI)
+
 ```bash
 test:run
 ```
 
 - gera relatório de cobertura
+
 ```bash
-test:coverage 
+test:coverage
+```
+
+- gera cobertura e abre no navegador o relatório
+
+```bash
+npm run test:coverage:open
 ```
 
 - abre interface visual no browser (opcional, requer @vitest/ui)
+
 ```bash
-test:ui 
+test:ui
 ```
 
-
 ## Estrutura Testes
+
 ```text
 src/
   components/
@@ -58,7 +72,9 @@ src/
       useCounter.ts
       useCounter.test.t
 ```
+
 ## Estrutura
+
 ```text
 src/
 ├── components/
