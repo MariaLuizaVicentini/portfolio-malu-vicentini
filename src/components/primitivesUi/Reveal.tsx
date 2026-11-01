@@ -13,6 +13,7 @@ export default function Reveal({ children, className, delay = 0 }: RevealProps) 
 
   return (
     <div
+      data-testid="div-reveal"
       ref={ref}
       style={visible ? { animationDelay: `${delay}ms` } : undefined}
       className={cn(visible ? 'animate-reveal-up' : 'opacity-0', className)}
@@ -21,3 +22,5 @@ export default function Reveal({ children, className, delay = 0 }: RevealProps) 
     </div>
   );
 }
+
+
