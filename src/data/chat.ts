@@ -3,11 +3,6 @@ import { SITE } from './site';
 import { FEATURED_PROJECT, PROJECTS } from './projects';
 import { TECH_CATEGORIES } from './technologies';
 
-/**
- * Respostas locais do chat.
- * Todo o conteúdo abaixo vem exclusivamente de informações que já existem
- * no portfólio — nada é inventado sobre a Malu.
- */
 
 export const CHAT_SHORTCUTS: ChatShortcut[] = [
   { id: 'sobre', label: 'Sobre a Malu' },
