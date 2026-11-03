@@ -1,9 +1,8 @@
-import { render, renderHook, screen } from "@testing-library/react";
+import { renderHook, screen } from "@testing-library/react";
 import { useLockBodyScroll } from "./useLockBodyScroll";
-import { act } from "react";
 
 describe("useLockBodyScroll (hook) - unit", () => {
-  /* Limpando o estilo do body após a cada teste*/
+  /* Limpando o estilo do body após cada teste*/
   afterEach(() => {
     document.body.style.overflow = "";
   });
